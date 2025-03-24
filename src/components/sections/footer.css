@@ -2,7 +2,7 @@ footer{
   width: 100%;
   display: flex;
   align-items: center;
-  height:8dvh;
+  height:10%;
   background: var(--footer-bar);
   padding: 0 10px;
 }
