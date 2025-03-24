@@ -1,4 +1,4 @@
-import './styles/base/global.css';
+import './styles/base/app.css';
 import './styles/base/animation.css';
 import Desktop from './pages/Desktop';
 
