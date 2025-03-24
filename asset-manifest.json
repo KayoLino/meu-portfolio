@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/meu-portfolio/static/css/main.47e87aaf.css",
+    "main.js": "/meu-portfolio/static/js/main.fa7be9a7.js",
+    "static/media/SuperMagical.ttf": "/meu-portfolio/static/media/SuperMagical.8e5cc7115b4a6b3d84da.ttf",
+    "static/media/background.png": "/meu-portfolio/static/media/background.bac0fc1305ed601dab9c.png",
+    "static/media/bear.gif": "/meu-portfolio/static/media/bear.e674b88996af490630b6.gif",
+    "static/media/email.png": "/meu-portfolio/static/media/email.4e12c3081b1811966f30.png",
+    "static/media/github.png": "/meu-portfolio/static/media/github.a7be5e9f33a23fcc3083.png",
+    "static/media/skills.png": "/meu-portfolio/static/media/skills.6847f563d31fe164f2c1.png",
+    "static/media/education.png": "/meu-portfolio/static/media/education.8b780a01060c4d60babf.png",
+    "static/media/myProjects.png": "/meu-portfolio/static/media/myProjects.96cca970c38acd5a9098.png",
+    "static/media/close.png": "/meu-portfolio/static/media/close.182993f16b2f94f1d122.png",
+    "static/media/experience.png": "/meu-portfolio/static/media/experience.2f9e77ba7322f5d28aec.png",
+    "static/media/resume.png": "/meu-portfolio/static/media/resume.3cd117819268a9d1bea9.png",
+    "static/media/Bubblegum.ttf": "/meu-portfolio/static/media/Bubblegum.b60ab23c8e3613590e58.ttf",
+    "static/media/windows.png": "/meu-portfolio/static/media/windows.e3cc6aae87a5c95283a8.png",
+    "index.html": "/meu-portfolio/index.html",
+    "main.47e87aaf.css.map": "/meu-portfolio/static/css/main.47e87aaf.css.map",
+    "main.fa7be9a7.js.map": "/meu-portfolio/static/js/main.fa7be9a7.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.47e87aaf.css",
+    "static/js/main.fa7be9a7.js"
+  ]
+}
