@@ -1,0 +1,48 @@
+.windowFull-container{
+  position: absolute;
+  width: 60%;
+  height: auto;
+  max-height: 80vh;
+  background: rgba(255, 255, 255, 0.9);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -60%);
+  border-right: 10px solid var(--border-color);
+  border-left: 10px solid var(--border-color);
+  border-bottom: 10px solid var(--border-color);
+}
+
+.windowFull-close{
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  height: 2.5rem;
+  background: var(--background-color);
+}
+
+.windowFull-close img {
+  cursor: pointer;
+}
+
+.windowFull-container img {
+  width: 30px;
+  height: 30px;
+}
+
+@media (max-width: 600px) {
+  .windowFull-container{
+    position: absolute;
+    width: 90%;
+    border: 10px solid var(--border-color);
+  }
+
+  .windowFull-close{
+    height: 1.8rem;
+    width: 100%;
+  }
+
+  .windowFull-container img {
+    width: 25px;
+    height: 25px;
+  }
+}

@@ -1,0 +1,46 @@
+.skills-container {
+  padding: 2rem;
+  margin: 1rem auto;
+  max-width: 900px;
+  max-height: 70vh;
+  overflow-y: scroll;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+}
+
+.skills-container h3 {
+  font-size: 1.3rem; 
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  line-height: 1.4;
+}
+
+.skills-container ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.skills-container ul li {
+  font-size: 0.95rem; 
+  color: #555;
+  margin-bottom: 0.8rem;
+}
+
+.skills-container ul li span {
+  font-weight: 600;
+  color: #CE585A;
+}
+
+@media (max-width: 600px) {
+  .skills-container h3 {
+    font-size: 1rem;  
+  }
+
+  .skills-container ul li {
+    font-size: 0.8rem;  
+  }
+
+}

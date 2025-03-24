@@ -1,0 +1,39 @@
+.background{
+position: absolute;
+overflow: hidden;
+background-image: url('../../assets/images/background.png');
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+width: 100%;
+height: 100vh;
+z-index: -10;
+}
+
+.container-particles{
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+}
+
+.icone {
+  width: 30px;
+  height: 30px;
+  background-image: url('../../assets/icons/star.png');
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  animation: anima 5s linear infinite;
+  animation-duration: calc(300s / var(--i));
+  opacity:0.5;
+}
+
+@keyframes anima {
+  0%{
+    transform: translateY(100vh)scale(0)rotate(0deg);
+  }
+  100%{
+    transform: translateY(-10vh)scale(0.5)rotate(360deg);
+  }
+}

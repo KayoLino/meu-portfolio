@@ -1,0 +1,11 @@
+export { default as Background } from './background/Background';
+export { default as Footer } from './sections/Footer';
+export { default as WindowFull } from './windows/WindowFull';
+export { default as MyProjects } from './sections/MyProjects';
+export { default as Experience } from './sections/Experience';
+export { default as Education } from './sections/Education';
+export { default as Skills } from './sections/Skills';
+export { default as Resume } from './sections/Resume';
+export { default as Email } from './sections/Email';
+export { default as InitialPage } from './sections/InitialPage';
+export { default as LoadingPage } from './sections/LoadingPage';

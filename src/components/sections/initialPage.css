@@ -1,0 +1,76 @@
+.initialPage-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  gap: 2rem;
+}
+
+.initialPage-container img {
+  background-color: var(--background-color) ;
+  padding: 1rem;
+  border-radius: 50%;
+  width: 180px;
+  height: 180px;
+}
+
+.initialPage-container p {
+  font-family: 'Bubblegum', sans-serif;
+  font-size: 3rem;
+}
+
+.initialPage-container>div{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--background-color);
+  padding: 1rem;
+  width: 400px;
+  height: 80px;
+  border-radius: 30px;
+}
+
+.initialPage-container>div input{
+  font-family: "SuperMagical", sans-serif;
+  width: 90%;
+  height: 100%;
+  background:transparent;
+  outline: none;
+  border: none;
+  color: #ffffff;
+  font-size: 1.4rem;
+  text-align: center;
+}
+
+.initialPage-container>div input::placeholder{
+  color: #6EA4D4;
+}
+
+.initialPage-container>div i {
+  color: #fff;
+  font-size: 3rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.initialPage-container>div i:hover {
+  transform: scale(1.1);
+}
+
+@media (max-width: 600px) {
+
+  .initialPage-container>div{
+    width: 300px;
+    height: 70px;
+  }
+
+  .initialPage-container>div input{
+    font-size: 1rem;
+  }
+  
+  .initialPage-container>div i {
+    font-size: 2.5rem;
+  }
+
+}

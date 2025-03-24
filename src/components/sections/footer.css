@@ -1,0 +1,37 @@
+footer{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  height:8dvh;
+  background: var(--footer-bar);
+  padding: 0 10px;
+}
+
+footer img {
+  width: 60px;
+  height: 60px;
+}
+
+.taskbar{
+  display: flex;
+  align-items: center;
+  color: var(--text-footer);
+  background: var( --windows-open-color);
+  padding: 10px;
+  width: 290px;
+  border-radius: 15px;
+  margin: 0 20px;
+  gap: 1rem;
+}
+
+.taskbar img {
+  width: 30px;
+  height: 30px;
+}
+
+@media (max-width: 600px) {
+  footer img {
+    width: 40px;
+    height: 40px;
+  }
+}

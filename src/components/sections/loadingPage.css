@@ -1,0 +1,18 @@
+.loadingPage-container{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 1rem;
+  justify-content: center;
+  height: 100vh;
+}
+
+.loadingPage-container img{
+  width: 200px;
+  height: 200px;
+}
+
+.loadingPage-container p {
+  font-family: 'SuperMagical',sans-serif;
+  font-size: 1.5rem;
+}

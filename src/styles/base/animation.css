@@ -1,0 +1,64 @@
+@keyframes window {
+  0% {
+    transform: translate(-100%, 0) scale(0);
+    opacity: 0;
+  }
+  100% {
+    transform: translate(-50%, -60%) scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes windowClose {
+  0% {
+    transform: translate(-50%, -60%) scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(-100%, 0) scale(0);
+    opacity: 0;
+  }
+}
+
+@keyframes growFromLeft {
+  from {
+    width: 0;
+    opacity: 0;
+  }
+  to {
+    width: 200px;
+    opacity: 1;
+  }
+}
+
+@keyframes growClose {
+  from {
+    width: 200px;
+    opacity: 1;
+  }
+  to {
+    width: 0;
+    opacity: 0;
+  }
+}
+
+.grow {
+  background: blue;
+  width: 0;
+  animation: growFromLeft 0.3s ease-in-out forwards;
+}
+
+.growClose{
+  animation: growClose 0.3s ease-in-out forwards;
+
+}
+
+.windowClosing {
+  animation: windowClose 0.3s ease-in-out forwards;
+}
+
+
+
+.windowOpen {
+  animation: window 0.3s ease-in-out forwards;
+}

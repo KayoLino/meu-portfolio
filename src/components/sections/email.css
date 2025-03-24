@@ -1,0 +1,42 @@
+.email-container {
+  padding: 2rem;
+  margin: 1rem auto;
+  max-width: 900px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+}
+
+.email-container h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  line-height: 1.4;
+}
+
+.email-container p {
+  font-size: 1rem;
+  color: #555;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  line-height: 1.6;
+}
+
+.email-container .highlight {
+  font-weight: 600;
+  color: var(--border-color);
+}
+
+.email-container a {
+  color: #2a6ebb;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.email-container a:hover {
+  text-decoration: underline;
+  color: #1a4c8a;
+}
