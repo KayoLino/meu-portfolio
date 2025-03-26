@@ -27,23 +27,17 @@ import email from '../assets/icons/email.png';
 
 // Hooks
 import { useState, useEffect } from 'react';
-import { openWindow } from '../hooks/useOpenWindow';
+import { openWindow, closeAllWindows } from '../hooks/useOpenWindow';
 
 export default function Desktop() {
 
   const [initialDesktop, setInitialDesktop] = useState(true);
   const [loading, setLoading] = useState(false);
 
+  const [activeWindow, setActiveWindow] = useState(null);
   const [icon, setIcon] = useState(null);
   const [showTaskBar, setShowTaskBar] = useState(false);
   const [name, setName] = useState('');
-  const [windowProject, setWindowProject] = useState(false);
-  const [windowExperience, setWindowExperience] = useState(false);
-  const [windowEducation, setWindowEducation] = useState(false);
-  const [windowSkills, setWindowSkills] = useState(false);
-  const [windowGithub, setWindowGithub] = useState(false);
-  const [windowResume, setWindowResume] = useState(false);
-  const [windowEmail, setWindowEmail] = useState(false);
 
   const handleClick = () => {
     setInitialDesktop(false);
@@ -84,57 +78,57 @@ export default function Desktop() {
     <>
       <Background />
       <div className="desktop-container">
-        {windowProject && (
-          <WindowFull setState={setWindowProject} setName={setName} setIcon={setIcon} setShowTaskBar={setShowTaskBar}>
+        {activeWindow === 'Projetos' && (
+          <WindowFull setState={() => setActiveWindow(null)} setName={setName} setIcon={setIcon} setShowTaskBar={setShowTaskBar}>
             <MyProjects />
           </WindowFull>
         )}
 
-        {windowExperience && (
-          <WindowFull setState={setWindowExperience} setName={setName} setIcon={setIcon} setShowTaskBar={setShowTaskBar}>
+        {activeWindow === 'Experiência' && (
+          <WindowFull setState={() => setActiveWindow(null)} setName={setName} setIcon={setIcon} setShowTaskBar={setShowTaskBar}>
             <Experience />
           </WindowFull>
         )}
 
-        {windowEducation && (
-          <WindowFull setState={setWindowEducation} setName={setName} setIcon={setIcon} setShowTaskBar={setShowTaskBar}>
+        {activeWindow === 'Educação' && (
+          <WindowFull setState={() => setActiveWindow(null)} setName={setName} setIcon={setIcon} setShowTaskBar={setShowTaskBar}>
             <Education />
           </WindowFull>
         )}
 
-        {windowSkills && (
-          <WindowFull setState={setWindowSkills} setName={setName} setIcon={setIcon} setShowTaskBar={setShowTaskBar}>
+        {activeWindow === 'Habilidades' && (
+          <WindowFull setState={() => setActiveWindow(null)} setName={setName} setIcon={setIcon} setShowTaskBar={setShowTaskBar}>
             <Skills />
           </WindowFull>
         )}
 
-        {windowResume && (
-          <WindowFull setState={setWindowResume} setName={setName} setIcon={setIcon} setShowTaskBar={setShowTaskBar}>
+        {activeWindow === 'Resumo' && (
+          <WindowFull setState={() => setActiveWindow(null)} setName={setName} setIcon={setIcon} setShowTaskBar={setShowTaskBar}>
             <Resume />
           </WindowFull>
         )}
 
-        {windowEmail && (
-          <WindowFull setState={setWindowEmail} setName={setName} setIcon={setIcon} setShowTaskBar={setShowTaskBar}>
+        {activeWindow === 'Email' && (
+          <WindowFull setState={() => setActiveWindow(null)} setName={setName} setIcon={setIcon} setShowTaskBar={setShowTaskBar}>
             <Email />
           </WindowFull>
         )}
 
         <div className="desktop-section">
           <div className="folders">
-            <div className="folder" onClick={() => { openWindow(setWindowProject, setName, 'Projetos', setIcon, myProjects, setShowTaskBar); }}>
+            <div className="folder" onClick={() => openWindow('Projetos', myProjects, setActiveWindow, setName, setIcon, setShowTaskBar)}>
               <img src={myProjects} alt="Meus Projetos" />
               <p>Projetos</p>
             </div>
-            <div className="folder" onClick={() => { openWindow(setWindowExperience, setName, 'Experiência', setIcon, experience, setShowTaskBar); }}>
+            <div className="folder" onClick={() => openWindow('Experiência', experience, setActiveWindow, setName, setIcon, setShowTaskBar)}>
               <img src={experience} alt="Experiência" />
               <p>Experiência</p>
             </div>
-            <div className="folder" onClick={() => { openWindow(setWindowEducation, setName, 'Educação', setIcon, education, setShowTaskBar); }}>
+            <div className="folder" onClick={() => openWindow('Educação', education, setActiveWindow, setName, setIcon, setShowTaskBar)}>
               <img src={education} alt="Educação" />
               <p>Educação</p>
             </div>
-            <div className="folder" onClick={() => { openWindow(setWindowSkills, setName, 'Habilidades', setIcon, skills, setShowTaskBar); }}>
+            <div className="folder" onClick={() => openWindow('Habilidades', skills, setActiveWindow, setName, setIcon, setShowTaskBar)}>
               <img src={skills} alt="Habilidades" />
               <p>Habilidades</p>
             </div>
@@ -144,11 +138,11 @@ export default function Desktop() {
               <img src={github} alt="GitHub" />
               <p>GitHub</p>
             </a>
-            <div className="file" onClick={() => { openWindow(setWindowResume, setName, 'Resumo', setIcon, resume, setShowTaskBar); }}>
+            <div className="file" onClick={() => openWindow('Resumo', resume, setActiveWindow, setName, setIcon, setShowTaskBar)}>
               <img src={resume} alt="Resumo" />
               <p>Resumo.pdf</p>
             </div>
-            <div className="file" onClick={() => { openWindow(setWindowEmail, setName, 'Email', setIcon, email, setShowTaskBar); }}>
+            <div className="file" onClick={() => openWindow('Email', email, setActiveWindow, setName, setIcon, setShowTaskBar)}>
               <img src={email} alt="Email" />
               <p>Email</p>
             </div>
@@ -158,4 +152,4 @@ export default function Desktop() {
       <Footer name={name} icon={icon} showTaskBar={showTaskBar} />
     </>
   );
-}
+}  

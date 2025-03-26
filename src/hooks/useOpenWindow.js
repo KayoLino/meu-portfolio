@@ -1,13 +1,13 @@
 
-export function openWindow(setState, setName, string, setIcon, icon, setShowTaskBar) {
-  setName(string);
+export function openWindow(name, icon, setActiveWindow, setName, setIcon, setShowTaskBar) {
+  setActiveWindow(name);
+  setName(name);
   setIcon(icon);
   setShowTaskBar(true);
-  setState(true);
 }
 
-export function closeWindow(setState, setName, setIcon) {
+export function closeWindow(setActiveWindow, setName, setIcon) {
+  setActiveWindow(null);
   setIcon(null);
   setName('');
-  setState(false);
 }
