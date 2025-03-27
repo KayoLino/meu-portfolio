@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/meu-portfolio/static/css/main.a2442628.css",
-    "main.js": "/meu-portfolio/static/js/main.5643be36.js",
+    "main.css": "/meu-portfolio/static/css/main.0386c8c0.css",
+    "main.js": "/meu-portfolio/static/js/main.cfde81b9.js",
     "static/media/SuperMagical.ttf": "/meu-portfolio/static/media/SuperMagical.8e5cc7115b4a6b3d84da.ttf",
     "static/media/background.png": "/meu-portfolio/static/media/background.bac0fc1305ed601dab9c.png",
     "static/media/bear.gif": "/meu-portfolio/static/media/bear.e674b88996af490630b6.gif",
@@ -16,11 +16,11 @@
     "static/media/Bubblegum.ttf": "/meu-portfolio/static/media/Bubblegum.b60ab23c8e3613590e58.ttf",
     "static/media/windows.png": "/meu-portfolio/static/media/windows.e3cc6aae87a5c95283a8.png",
     "index.html": "/meu-portfolio/index.html",
-    "main.a2442628.css.map": "/meu-portfolio/static/css/main.a2442628.css.map",
-    "main.5643be36.js.map": "/meu-portfolio/static/js/main.5643be36.js.map"
+    "main.0386c8c0.css.map": "/meu-portfolio/static/css/main.0386c8c0.css.map",
+    "main.cfde81b9.js.map": "/meu-portfolio/static/js/main.cfde81b9.js.map"
   },
   "entrypoints": [
-    "static/css/main.a2442628.css",
-    "static/js/main.5643be36.js"
+    "static/css/main.0386c8c0.css",
+    "static/js/main.cfde81b9.js"
   ]
 }
